@@ -6,7 +6,7 @@ package language_agent
 import (
 	context "context"
 	fmt "fmt"
-	common "github.com/SkyAPM/go2sky/reporter/grpc/common"
+	common "github.com/etrace-io/go2skygrpc/common"
 	proto "github.com/golang/protobuf/proto"
 	grpc "google.golang.org/grpc"
 	math "math"
@@ -85,6 +85,7 @@ const (
 	SpanLayer_Http         SpanLayer = 3
 	SpanLayer_MQ           SpanLayer = 4
 	SpanLayer_Cache        SpanLayer = 5
+	SpanLayer_Biz          SpanLayer = 6
 )
 
 var SpanLayer_name = map[int32]string{
@@ -94,6 +95,7 @@ var SpanLayer_name = map[int32]string{
 	3: "Http",
 	4: "MQ",
 	5: "Cache",
+	6: "Biz",
 }
 
 var SpanLayer_value = map[string]int32{
@@ -103,6 +105,7 @@ var SpanLayer_value = map[string]int32{
 	"Http":         3,
 	"MQ":           4,
 	"Cache":        5,
+	"Biz":          6,
 }
 
 func (x SpanLayer) String() string {

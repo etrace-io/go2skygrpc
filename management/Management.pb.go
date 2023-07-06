@@ -6,7 +6,7 @@ package management
 import (
 	context "context"
 	fmt "fmt"
-	common "github.com/SkyAPM/go2sky/reporter/grpc/common"
+	"github.com/etrace-io/go2skygrpc/common"
 	proto "github.com/golang/protobuf/proto"
 	grpc "google.golang.org/grpc"
 	math "math"

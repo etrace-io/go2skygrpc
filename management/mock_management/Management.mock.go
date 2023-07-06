@@ -6,8 +6,8 @@ package mock_management
 
 import (
 	context "context"
-	common "github.com/SkyAPM/go2sky/reporter/grpc/common"
-	management "github.com/SkyAPM/go2sky/reporter/grpc/management"
+	"github.com/etrace-io/go2skygrpc/common"
+	"github.com/etrace-io/go2skygrpc/management"
 	gomock "github.com/golang/mock/gomock"
 	grpc "google.golang.org/grpc"
 	reflect "reflect"
